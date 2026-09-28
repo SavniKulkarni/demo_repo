@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fork the Web | Mozilla Git &amp; GitHub Workshop</title>
+  <meta name="description" content="A hands-on Git and GitHub workshop. Fork, clone, PR, merge, deploy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scrollbar" id="scrollbar"></div>
+  <canvas id="confetti"></canvas>
+
+  <header class="hero">
+    <div class="hero-text">
+      <p class="tag">Mozilla Club x Git &amp; GitHub Workshop</p>
+      <h1>Fork the <span class="wobble">web.</span></h1>
+      <p class="lead">Your first pull request starts here. By the end of today, you'll be an open source contributor.</p>
+      <a class="btn" href="#why">Why we're here</a>
+    </div>
+
+    <div class="terminal" aria-label="Animated terminal showing git commands">
+      <div class="term-bar"><i></i><i></i><i></i><span>~/mozilla-workshop</span></div>
+      <pre id="term"></pre>
+    </div>
+
+    <button class="fox" id="fox" aria-label="Click the fox for confetti">🦊</button>
+  </header>
+
+  <section id="journey" class="section">
+  <h2>Your 5-step journey</h2>
+  <p class="sub">Tick each step off as we do it together. Your progress is saved in this browser.</p>
+  <div class="meter"><div id="meter-fill"></div></div>
+  <p class="meter-label" id="meter-label">0 of 5 done</p>
+  <div class="steps" id="steps"></div>
+</section>
+
+  <section class="section alt" id="why">
+    <h2>Why we're here: open source</h2>
+    <p class="sub">We're an open source club, and this workshop is your warm-up for Hacktoberfest. Tap a card to flip it.</p>
+    <div class="flips" id="flips"></div>
+  </section>
+
+  <section class="section" id="wall">
+    <h2>The contributor wall</h2>
+    <p class="sub">Everyone who merges a pull request lands here. Tap a name to say hi.</p>
+    <div class="wall" id="wall-list"></div>
+
+    <div class="yourturn">
+      <h3>Your turn</h3>
+      <p>Open <code>script.js</code>, find the <code>CONTRIBUTORS</code> list, and add your name on a new line. Commit, push, open a PR. When it's merged and deployed, you'll see yourself on this wall.</p>
+      <p class="small">Two people editing the same line? That's a merge conflict, and fixing one is a rite of passage.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with HTML, CSS and a pinch of JavaScript. Free and open, like the web should be.</p>
+    <p class="small">Next up: change the colors in <code>style.css</code> and make this site yours.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
